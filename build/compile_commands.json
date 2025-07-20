@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/popik/OpenGL/build",
+  "command": "/usr/bin/g++ -I/home/popik/OpenGL/include -g -std=gnu++23 -o CMakeFiles/Gl.dir/src/main.cpp.o -c /home/popik/OpenGL/src/main.cpp",
+  "file": "/home/popik/OpenGL/src/main.cpp",
+  "output": "CMakeFiles/Gl.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/popik/OpenGL/build",
+  "command": "/usr/bin/gcc -I/home/popik/OpenGL/include -g -o CMakeFiles/Gl.dir/src/glad.c.o -c /home/popik/OpenGL/src/glad.c",
+  "file": "/home/popik/OpenGL/src/glad.c",
+  "output": "CMakeFiles/Gl.dir/src/glad.c.o"
+}
+]
