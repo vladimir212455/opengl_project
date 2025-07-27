@@ -36,7 +36,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
@@ -64,13 +64,33 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 16,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
 	},
 	"compileGroups" : 
 	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/popik/OpenGL/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
 		{
 			"compileCommandFragments" : 
 			[
@@ -94,26 +114,6 @@
 				],
 				"standard" : "23"
 			},
-			"sourceIndexes" : 
-			[
-				0
-			]
-		},
-		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "-g"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 7,
-					"path" : "/home/popik/OpenGL/include"
-				}
-			],
-			"language" : "C",
 			"sourceIndexes" : 
 			[
 				1
@@ -163,13 +163,6 @@
 				0,
 				1
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2
-			]
 		}
 	],
 	"sources" : 
@@ -177,19 +170,14 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
 			"path" : "src/glad.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/shader.hpp",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 1,
+			"path" : "src/ligtning/main.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

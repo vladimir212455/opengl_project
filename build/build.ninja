@@ -49,14 +49,6 @@ cmake_ninja_workdir = /home/popik/OpenGL/build/
 
 build cmake_object_order_depends_target_Gl: phony || .
 
-build CMakeFiles/Gl.dir/src/main.cpp.o: CXX_COMPILER__Gl_unscanned_Debug /home/popik/OpenGL/src/main.cpp || cmake_object_order_depends_target_Gl
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles/Gl.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/popik/OpenGL/include
-  OBJECT_DIR = CMakeFiles/Gl.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gl.dir/src
-
 build CMakeFiles/Gl.dir/src/glad.c.o: C_COMPILER__Gl_unscanned_Debug /home/popik/OpenGL/src/glad.c || cmake_object_order_depends_target_Gl
   CONFIG = Debug
   DEP_FILE = CMakeFiles/Gl.dir/src/glad.c.o.d
@@ -64,6 +56,14 @@ build CMakeFiles/Gl.dir/src/glad.c.o: C_COMPILER__Gl_unscanned_Debug /home/popik
   INCLUDES = -I/home/popik/OpenGL/include
   OBJECT_DIR = CMakeFiles/Gl.dir
   OBJECT_FILE_DIR = CMakeFiles/Gl.dir/src
+
+build CMakeFiles/Gl.dir/src/ligtning/main.cpp.o: CXX_COMPILER__Gl_unscanned_Debug /home/popik/OpenGL/src/ligtning/main.cpp || cmake_object_order_depends_target_Gl
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/Gl.dir/src/ligtning/main.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/popik/OpenGL/include
+  OBJECT_DIR = CMakeFiles/Gl.dir
+  OBJECT_FILE_DIR = CMakeFiles/Gl.dir/src/ligtning
 
 
 # =============================================================================
@@ -73,7 +73,7 @@ build CMakeFiles/Gl.dir/src/glad.c.o: C_COMPILER__Gl_unscanned_Debug /home/popik
 #############################################
 # Link the executable bin/Gl
 
-build bin/Gl: CXX_EXECUTABLE_LINKER__Gl_Debug CMakeFiles/Gl.dir/src/main.cpp.o CMakeFiles/Gl.dir/src/glad.c.o | /usr/lib/libglfw.so.3.4 /usr/lib/libGLX.so /usr/lib/libOpenGL.so
+build bin/Gl: CXX_EXECUTABLE_LINKER__Gl_Debug CMakeFiles/Gl.dir/src/glad.c.o CMakeFiles/Gl.dir/src/ligtning/main.cpp.o | /usr/lib/libglfw.so.3.4 /usr/lib/libGLX.so /usr/lib/libOpenGL.so
   CONFIG = Debug
   DEP_FILE = CMakeFiles/Gl.dir/link.d
   FLAGS = -g

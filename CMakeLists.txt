@@ -8,9 +8,8 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 3.3 REQUIRED)
 
 add_executable(${PROJECT_NAME} 
-    src/main.cpp
     src/glad.c
-    src/shader.hpp
+    src/ligtning/main.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
