@@ -9,6 +9,8 @@ find_package(glfw3 3.3 REQUIRED)
 
 add_executable(${PROJECT_NAME} 
     src/glad.c
+    src/camera.hpp
+    src/shader.hpp
     src/ligtning/main.cpp
 )
 
