@@ -141,9 +141,9 @@ int main()
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    int nrChannels;
-    Texture2D outTexture(SCR_WIDTH, SCR_HEIGHT, nrChannels);
-    Texture2D outTexture2(SCR_WIDTH, SCR_HEIGHT, nrChannels);
+    // int nrChannels;
+    // Texture2D outTexture(SCR_WIDTH, SCR_HEIGHT, nrChannels);
+    // Texture2D outTexture2(SCR_WIDTH, SCR_HEIGHT, nrChannels);
 
     ourShader.use();
     ourShader.setInt("texture1", 1);
@@ -159,10 +159,10 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // also clear the depth buffer now!
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, outTexture.getTexture());
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, outTexture2.getTexture());
+        // glActiveTexture(GL_TEXTURE0);
+        // glBindTexture(GL_TEXTURE_2D, outTexture.getTexture());
+        // glActiveTexture(GL_TEXTURE1);
+        // glBindTexture(GL_TEXTURE_2D, outTexture2.getTexture());
 
         ourShader.use();
 
