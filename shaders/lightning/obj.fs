@@ -44,50 +44,50 @@ void main()
     FragColor = vec4(result, 1.0);
 } 
 
-// свет с затуханием 
+// // свет с затуханием 
 
-struct Light_point {
-    vec3 position;  
+// struct Light_point {
+//     vec3 position;  
   
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
+//     vec3 ambient;
+//     vec3 diffuse;
+//     vec3 specular;
 	
-    float constant;
-    float linear;
-    float quadratic;
-}; 
+//     float constant;
+//     float linear;
+//     float quadratic;
+// }; 
 
-struct Flashlight()
-{
-    vec3 position;  
-    float cutOff; // cos angle
+// struct Flashlight()
+// {
+//     vec3 position;  
+//     float cutOff; // cos angle
     
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
+//     vec3 ambient;
+//     vec3 diffuse;
+//     vec3 specular;
 	
-    float constant;
-    float linear;
-    float quadratic;
+//     float constant;
+//     float linear;
+//     float quadratic;
 
-}
-vec4 Flashlight_func()
-{
-    float theta     = dot(lightDir, normalize(-light.direction));
-    float epsilon   = light.cutOff - light.outerCutOff;
-    float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);        
-    if(theta > light.cutOff) 
-    {       
+// }
+// vec4 Flashlight_func()
+// {
+//     float theta     = dot(lightDir, normalize(-light.direction));
+//     float epsilon   = light.cutOff - light.outerCutOff;
+//     float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);        
+//     if(theta > light.cutOff) 
+//     {       
     
-    }
-    else 
-    color = vec4(light.ambient * vec3(texture(material.diffuse, TexCoords)), 1.0);
-}
-vec4 Light_point_func()
-{
-    float distance    = length(light.position - FragPos);
-    float attenuation = 1.0 / (light.constant + light.linear * distance + 
-    light.quadratic * (distance * distance));    
+//     }
+//     else 
+//     color = vec4(light.ambient * vec3(texture(material.diffuse, TexCoords)), 1.0);
+// }
+// vec4 Light_point_func()
+// {
+//     float distance    = length(light.position - FragPos);
+//     float attenuation = 1.0 / (light.constant + light.linear * distance + 
+//     light.quadratic * (distance * distance));    
 
-}
+// }

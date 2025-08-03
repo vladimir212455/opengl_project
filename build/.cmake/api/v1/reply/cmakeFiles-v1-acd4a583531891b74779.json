@@ -261,6 +261,22 @@
 		{
 			"isExternal" : true,
 			"path" : "/usr/lib/cmake/glfw3/glfw3Targets-none.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/assimp-6.0/assimpConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/assimp-6.0/assimpConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/assimp-6.0/assimpTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/assimp-6.0/assimpTargets-noconfig.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
